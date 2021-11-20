@@ -1,0 +1,16 @@
+.button{
+    background: blue;
+    color: white;
+    border-radius: 5px;
+    border: 3px solid #00cc33;
+    width: 75px;
+    height: 30px;
+}
+.popup{
+    background: violet;
+    color: white;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}

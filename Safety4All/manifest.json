@@ -1,0 +1,31 @@
+{
+    "manifest_version": 2,
+    "name": "SafeExt",
+    "version": "0.0.1",
+    "description": "Best Ext For Study",
+    "icons": {
+        "16": "LogoSS.png",
+        "48": "LogoSS.png",
+        "128": "LogoSS.png"
+    },
+    "content_security_policy":"script-src 'self' https://apis.google.com; object-src 'self'",
+    "content_scripts": [
+        {
+            "matches": [
+                "<all_urls>"
+            ],
+            "js": ["content.js"],
+            "css":["style.css"]
+        }
+    ],
+
+    "browser_action": {
+        "default_popup": "popup.html",
+        "default_title": "SafeExt",
+        "default_icon": {
+            "16": "LogoSS.png",
+            "48": "LogoSS.png",
+            "128": "LogoSS.png"
+        }
+    }
+}
